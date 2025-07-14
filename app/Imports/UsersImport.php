@@ -27,8 +27,8 @@ class UsersImport implements ToCollection, WithHeadingRow
             $validator = Validator::make($row->toArray(), [
                 'name' => 'required|string|max:255',
                 'email' => 'required|email',
-                'phone' => 'required',
-                'gender' => 'required'
+                'phone' => 'required|string|max:10',
+                'gender' => 'required|string'
             ]);
             
             if ($validator->fails()) {
