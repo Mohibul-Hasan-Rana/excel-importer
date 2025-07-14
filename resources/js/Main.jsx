@@ -191,8 +191,8 @@ const Main = () => {
           </h3>
           <ul className="text-sm text-blue-700 space-y-1">
             <li>• <strong>name:</strong> Required, max 255 characters</li>
-            <li>• <strong>email:</strong> Required</li>
-            <li>• <strong>phone:</strong> Required</li>
+            <li>• <strong>email:</strong> Required, email format</li>
+            <li>• <strong>phone:</strong> Required, max 10 characters</li>
             <li>• <strong>gender:</strong> Required</li>
           </ul>
         </div>
