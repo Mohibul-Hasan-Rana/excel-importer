@@ -11,7 +11,7 @@ A Laravel + React application for importing Excel files with validation and erro
 
 ### 1. Clone the repository
 ```
-git clone <your-repo-url>
+git clone https://github.com/Mohibul-Hasan-Rana/excel-importer.git
 cd excel-importer
 ```
 
