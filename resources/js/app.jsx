@@ -2,10 +2,18 @@ import './bootstrap';
 
 
 import React from 'react';
-   import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
+import Main from "./Main";
 
-   function App() {
-       return <h1>Hello, React in Laravel with Vite!</h1>;
-   }
-
-   ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+if (document.getElementById('app')) {
+    import('./bootstrap').then(() => {
+        ReactDOM.createRoot(document.getElementById('app')).render(
+            <React.StrictMode>
+                <Main />
+            </React.StrictMode>
+        );
+    });
+} else {
+    console.error('Element with id "app" not found.');
+}
+//ReactDOM.createRoot(document.getElementById('app')).render(<Main />);
